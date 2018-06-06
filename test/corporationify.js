@@ -58,3 +58,9 @@ test('should accept incorporated corporation type alias', assert => {
   const {type} = extract('Tether, Inc')
   assert.equal(type, 'Incorporated')
 })
+
+test('should set default corporation type', assert => {
+  assert.plan(1)
+  const {type} = extract('Tether', 'Limited')
+  assert.equal(type, 'Limited')
+})
