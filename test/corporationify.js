@@ -22,3 +22,9 @@ test('should get corporation name from string ending with a comma', assert => {
   const {name} = extract('Facebook,')
   assert.equal(name, 'Facebook')
 })
+
+test('should get and trim corporation name from string ending containing a comma', assert => {
+  assert.plan(1)
+  const {name} = extract('   Facebook  ,     ')
+  assert.equal(name, 'Facebook')
+})
