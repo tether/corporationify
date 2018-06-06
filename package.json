@@ -1,0 +1,29 @@
+{
+  "name": "corporationify",
+  "version": "1.0.0",
+  "description": "Extract corporation name and type from a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tether/corporationify.git"
+  },
+  "keywords": [
+    "organization",
+    "corporation",
+    "company",
+    "legal",
+    "name"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tether/corporationify/issues"
+  },
+  "homepage": "https://github.com/tether/corporationify#readme",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
