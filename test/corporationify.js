@@ -16,3 +16,9 @@ test('should get corporation name from string ending with a dot', assert => {
   const {name} = extract('Google.')
   assert.equal(name, 'Google')
 })
+
+test('should get corporation name from string ending with a comma', assert => {
+  assert.plan(1)
+  const {name} = extract('Facebook,')
+  assert.equal(name, 'Facebook')
+})
